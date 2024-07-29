@@ -1,19 +1,12 @@
 $(document).ready(function() {
     $(".fa-bars").click(()=> {
-        $(".fa-bars").addClass("hide");
-        $(".fa-times").addClass("show");
-        $("ul").addClass("show-nav");
+        $(".fa-bars").toggleClass("fa-times");
+        $("ul").toggleClass("show-nav");
     });
 
-    $(".fa-times").click(()=> {
-        $(".fa-times").removeClass("show");
-        $(".fa-bars").removeClass("hide");
-        $("ul").removeClass("show-nav");
-    })
-
     $(".nav-link").click(()=> {
-        $(".fa-times").removeClass("show");
-        $(".fa-bars").removeClass("hide");
+        $(".fa-times").addClass("fa-bars");
+        $(".fa-times").removeClass("fa-times");
         $("ul").removeClass("show-nav");
     })
 

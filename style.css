@@ -281,7 +281,149 @@ nav {
     font-size: 10px;
 }
 
-@media (max-width: 550px) {
+
+/* section-three */
+#section-three {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    width: 100%;
+    scroll-margin-top: 100px;
+}
+
+#section-three .heading {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 100%;
+}
+
+#section-three .heading .text h5 {
+    color: #00b400;
+    font-size: 17px;
+}
+
+#section-three .heading .text h3 {
+    font-size: 17px;
+}
+
+#section-three .heading .text {
+    display: flex;
+    gap: 10px;
+}
+
+.products .boxes {
+    padding: 30px 100px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-flow: row wrap;
+}
+
+.products .boxes .box  {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: center;
+    max-width: 220px;
+    height: 255px;
+    background: #fbfbfb;
+    border-radius: 10px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    margin-top: 30px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.25);
+    position: relative;
+}
+
+.products .boxes .box .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.products .boxes .box .top .fa-heart {
+    color: #fb9700;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+/* 
+.products .boxes .box .top .left-top {
+    position: relative;
+} */
+
+.products .boxes .box .top .left-top .fa {
+    position: absolute;
+    transform: rotate(270deg);
+    top: 0px;
+    font-size: 29px;
+    left: 0px;
+    color: #fb9700;
+}
+
+.products .boxes .box .top .left-top span {
+    position: absolute;
+    top: 10px;
+    font-size: 8px;
+    left: -2px;
+    color: white;
+}
+
+.products .boxes .box img {
+    width: 140px;
+    height: auto;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.products .boxes .box .product-details h6 {
+    text-align: left;
+    padding-bottom: 5px;
+    font-weight: 200;
+}
+
+.products .boxes .box .product-details {
+    padding-left: 10px;
+}
+
+.products .boxes .box .product-details .price {
+    color: #fb9700;
+}
+
+.products .boxes .box .product-details .price span{
+    color: black;
+}
+
+.products .boxes .box .product-details h5 {
+    text-align: left;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+.products .boxes .box .cart .fa-shopping-cart {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #00b400;
+    font-size: 12px;
+    padding: 8px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+}
+
+
+@media (max-width: 530px) {
     #section-two .heading {
         display: flex;
         flex-flow: column;
@@ -311,19 +453,47 @@ nav {
         flex-flow: column;
         text-align: center;
         justify-content: center;
-        min-width: 100%;
+        max-width: 280px;
         height: 200px;
     }
     
     .categories .boxes .box img {
         width: 100%;
-        height: 300px;
+        height: auto;
         padding-bottom: 5px;
     }
     
     .categories .boxes .box h6 {
         font-weight: 200;
         font-size: 10px;
+    }
+
+    /*section two */
+
+    .products .boxes .box  {
+        flex: 1;
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        justify-content: center;
+        max-width: 290px;
+        height: 255px;
+        background: #fbfbfb;
+        border-radius: 10px;
+        padding-bottom: 12px;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: relative;
+        margin-top: 30px;
+        cursor: pointer;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.25);
+        position: relative;
+    }
+
+    #section-three .heading {
+        display: flex;
+        flex-flow: column;
+        gap: 20px;
     }
 }
 
@@ -384,24 +554,14 @@ nav {
         width: 100%;
     }
 
-    .bars .fa-times {
-        transform: scaleX(0);
-        transition: all 1s ease-in-out;
-    }
-
-    .bars .fa-times.show {
-        cursor: pointer;
-        transform: scaleX(1);
-    }
-
     .bars .fa-bars {
         transform: scaleX(1);
         cursor: pointer;
         transition: all 1s ease-in-out;
     }
 
-    .bars .fa-bars.hide {
-        transform: scaleX(0);
+    .bars .fa-bars:hover {
+        color: #fb9700;
     }
 
     #section-one {
