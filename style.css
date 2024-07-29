@@ -625,6 +625,30 @@ nav {
         flex-flow: column;
         gap: 20px;
     }
+
+    /* section-five */
+
+    #section-five {
+        align-items: center;
+        text-align: center;
+    }
+    .about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        flex-flow: column;
+    }
+
+    .about .left {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #section-five {
+        padding-left: 0px;
+    }
 }
 
 
@@ -770,5 +794,9 @@ nav {
         width: 100%;
         padding-left: 30px;
         padding-right: 30px;
+    }
+
+    #section-five {
+        padding-left: 0px;
     }
 }
