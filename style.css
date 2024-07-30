@@ -299,6 +299,7 @@ nav {
     padding-left: 100px;
     padding-right: 100px;
     height: 100%;
+    scroll-margin-top: 100px;
 }
 
 #section-three .heading .text h5 {
@@ -433,6 +434,10 @@ nav {
     flex-flow: row wrap;
 }
 
+#section-four {
+    scroll-margin-top: 100px;
+}
+
 #section-four .heading {
     text-align: center;
 }
@@ -529,6 +534,7 @@ nav {
     background-color: #ffffff;
     z-index: -1;
     padding-left: 50px;
+    scroll-margin-top: 60px;
 }
 
 .about {
