@@ -5,6 +5,99 @@
     scroll-behavior: smooth;
 }
 
+@keyframes repeal {
+    from {
+        opacity: 0;
+        /* scale: 0; */
+        transform: translateX(-500px);
+    }
+    to {
+        opacity: 1;
+        /* scale: 1; */
+        transform: translateX(0px);
+    }
+}
+
+.block-2 {
+    animation: repeal linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes block-3 {
+    from {
+        opacity: 0;
+        /* scale: 0; */
+        transform: translateX(500px);
+    }
+    to {
+        opacity: 1;
+        /* scale: 1; */
+        transform: translateX(0px);
+    }
+}
+
+.block-3 {
+    animation: block-3 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes block-4 {
+    from {
+        opacity: 0;
+        /* scale: 0; */
+        transform: translateY(400px) translateX(400px);
+    }
+    to {
+        opacity: 1;
+        /* scale: 1; */
+        transform: translateY(0px) translateX(0px);
+    }
+}
+
+.block-4 {
+    animation: block-4 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes block-5 {
+    from {
+        opacity: 0;
+        /* scale: 0; */
+        transform: translateY(400px) translateX(-400px);
+    }
+    to {
+        opacity: 1;
+        /* scale: 1; */
+        transform: translateY(0px) translateX(0px);
+    }
+}
+
+.block-5 {
+    animation: block-5 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0;
+    }
+    to {
+        opacity: 1;
+        scale: 1; 
+    }
+}
+
+.block {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
 body {
     display: flex;
     justify-content: center;
